@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<edges>
+    <edge id="0_n" to="n" from="0">
+        <lane index="0" />
+    </edge>
+    <edge id="0_s" to="s" from="0">
+        <lane index="0" />
+    </edge>
+    <edge id="0_e" to="e" from="0">
+        <lane index="0" />
+    </edge>
+    <edge id="0_w" to="w" from="0">
+        <lane index="0" />
+    </edge>
+    <edge id="n_0" to="0" from="n">
+        <lane index="0" />
+    </edge>
+    <edge id="s_0" to="0" from="s">
+        <lane index="0" />
+    </edge>
+    <edge id="e_0" to="0" from="e">
+        <lane index="0" />
+    </edge>
+    <edge id="w_0" to="0" from="w">
+        <lane index="0" />
+    </edge>
+</edges>
