@@ -22,7 +22,7 @@ num_vehicles_waiting = 0
 step = 0
 while step < 12000:  # Modify the number of simulation steps as needed
     # Increment timers for each active phase
-        if north_active:
+        '''if north_active:
             north_timer += 1
         elif east_active:
             east_timer += 1
@@ -62,7 +62,7 @@ while step < 12000:  # Modify the number of simulation steps as needed
             north_active = True
             east_active = False  # Corrected variable name from "east_phase" to "east_active"
             south_active = False  # Corrected variable name from "south_phase" to "south_active"
-            west_timer = 0
+            west_timer = 0'''
         # Calculate waiting time for vehicles at the traffic light
         for veh_id in traci.vehicle.getIDList():
             waiting_time = traci.vehicle.getWaitingTime(veh_id)

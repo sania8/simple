@@ -172,11 +172,16 @@
         <lane id="w_0_1" index="1" speed="13.89" length="89.60" shape="0.00,101.60 89.60,101.60"/>
     </edge>
 
-    <tlLogic id="0" type="static" offset="0" programID="0"  >
+    <!-- <tlLogic id="0" type="static" offset="0" programID="0"  >
         <phase  duration="41" state="ggGggrrrrrggGggrrrrr"/>
         <phase  duration="41" state="rrrrrggGggrrrrrggGgg"/>
+    </tlLogic>-->
+    <tlLogic id="0" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGGGrrrrrGGGGGrrrrr"/>
+        <phase duration="3"  state="yyyyyrrrrryyyyyrrrrr"/>
+        <phase duration="42" state="rrrrrGGGGGrrrrrGGGGG"/>
+        <phase duration="3"  state="rrrrryyyyyrrrrryyyyy"/>
     </tlLogic>
-
     <junction id="0" type="traffic_light" x="100.00" y="100.00" incLanes="s_0_0 s_0_1 e_0_0 e_0_1 n_0_0 n_0_1 w_0_0 w_0_1" intLanes=":0_0_0 :0_20_0 :0_21_0 :0_3_0 :0_22_0 :0_5_0 :0_6_0 :0_23_0 :0_8_0 :0_24_0 :0_10_0 :0_25_0 :0_26_0 :0_13_0 :0_27_0 :0_15_0 :0_16_0 :0_28_0 :0_18_0 :0_29_0" shape="93.60,89.60 106.40,89.60 106.84,91.82 107.40,92.60 108.18,93.16 109.18,93.49 110.40,93.60 110.40,106.40 108.18,106.84 107.40,107.40 106.84,108.18 106.51,109.18 106.40,110.40 93.60,110.40 93.16,108.18 92.60,107.40 91.82,106.84 90.82,106.51 89.60,106.40 89.60,93.60 91.82,93.16 92.60,92.60 93.16,91.82 93.49,90.82">
         <request index="0"  response="00100000100000000000" foes="01111100100101100100" cont="0"/>
         <request index="1"  response="00000011010000001000" foes="01011011110101101100" cont="1"/>
@@ -198,7 +203,9 @@
         <request index="17" response="00011000000000001001" foes="00011100000001001001" cont="1"/>
         <request index="18" response="00000011110000001011" foes="00010011111001001011" cont="0"/>
         <request index="19" response="00000000000100100100" foes="00000000000100100100" cont="1"/>
-    </junction>
+    </junction> 
+    
+    
     <junction id="e" type="priority" x="200.00" y="100.00" incLanes="0_e_0 0_e_1" intLanes=":e_0_0" shape="200.00,100.00 200.00,106.40 200.00,100.00">
         <request index="0" response="0" foes="0" cont="0"/>
     </junction>

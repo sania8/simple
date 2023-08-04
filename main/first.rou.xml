@@ -1,0 +1,45 @@
+<routes>
+    <vType accel="1.0" decel="5.0" id="Car" length="5.0" maxSpeed="100.0" sigma="0.0" />
+    <!-- <route id="route_ns" edges="n_0 0_s"/> -->
+    <route id="route_ne" edges="n_0 0_e"/>
+    <route id="route_sn" edges="s_0 0_n"/>
+    <route id="route_en" edges="e_0 0_n"/>
+    <route id="route_ns" edges="n_0 0_s"/>
+    <route id="route_nw" edges="n_0 0_w"/> 
+    <route id="route_sw" edges="s_0 0_w"/>
+    <route id="route_se" edges="s_0 0_e"/>
+    <route id="route_wn" edges="w_0 0_n"/>
+    <route id="route_ws" edges="w_0 0_s"/>
+    <route id="route_ew" edges="e_0 0_w"/>
+    <route id="route_es" edges="e_0 0_s"/>
+    <flow depart="1" id="flow_n_e" number="5" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="n_0 0_e" />
+    </flow> 
+    <flow depart="1" id="flow_e_n" number="5" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="e_0 0_n" />
+    </flow>
+    <flow depart="1" id="flow_n_s" number="5" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="e_0 0_n"/>
+    </flow>
+    <flow depart="1" id="flow_n_w" number="5" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="n_0 0_w"/>
+    </flow>
+    <flow depart="1" id="flow_s_w" number="5" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="s_0 0_w"/>
+    </flow>
+    <flow depart="1" id="flow_s_e" number="5" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="s_0 0_e"/>
+    </flow>
+    <flow depart="1" id="flow_w_n" number="10" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="w_0 0_n"/>
+    </flow>
+    <flow depart="1" id="flow_w_s" number="10" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="w_0 0_s"/>
+    </flow>
+    <flow depart="1" id="flow_e_w" number="5" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="e_0 0_w"/>
+    </flow>
+    <flow depart="1" id="flow_e_s" number="5" begin="0"  probability="0.2"  color="1,0,1" type="Car" >
+        <route edges="e_0 0_s"/>
+    </flow>
+</routes>
